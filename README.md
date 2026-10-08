@@ -11,13 +11,13 @@ This repository contains a bottleneck autoencoder implementation containing Leak
   - Save outputs such as confusion matrices, training curve graphs, visual samples, and a global summary chart.
 
 ## Repository Structure
-- `MNIST_Autoencoder_Project.ipynb`: Main notebook featuring dataset subsets, noisy test injection, model definitions, runs, and evaluations.
+- `LeakyReLU.ipynb`: Main notebook featuring dataset subsets, noisy test injection, model definitions, runs, and evaluations.
 - `output/`:
-  - `results.csv`: Table documenting metrics across all 4 experimental settings.
+  - `results.csv` (and `results_full.csv` for unrounded numbers): Table documenting metrics across all 4 experimental settings.
   - `metrics_batch_*.png`: Combined Train/Val Loss and MAE graphs over training epochs per batch.
   - `samples_batch_*.png`: Comparison grids containing Original, Noisy (15%), and Reconstructed test digits.
   - `confusion_matrix_batch_*.png`: Confusion matrices based on cosine similarity classifiers.
-  - `result_10_digits_batch_*.png`: Digit-by-digit (0-9) visual reconstructions labeled with AI classification results.
+  - `result_10digits_batch_*.png`: Digit-by-digit (0-9) visual reconstructions labeled with AI classification results.
   - `summary_plot.png`: Comparative bar charts analyzing Test MSE and Digit Accuracy across all configurations.
 
 ## Results Summary
